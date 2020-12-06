@@ -1,5 +1,5 @@
 package main
-
+//✅
 import "fmt"
 
 type TreeNode struct {
@@ -46,16 +46,16 @@ func PreorderTraverseII(root *TreeNode) []int {
 //❌
 //将3个append代码压缩到一句
 //压缩到一句是不可以的，
-//func PreorderTraverseIII(root *TreeNode) []int {
-//	if root == nil {
-//		return nil
-//	}
-//
-//	var ret []int
-//	ret = append(ret, root.Val, PreorderTraverseIII(root.Left)..., PreorderTraverseIII(root.Right)...)
-//
-//	return ret
-//}
+/*func PreorderTraverseIII(root *TreeNode) []int {
+	if root == nil {
+		return nil
+	}
+
+	var ret []int
+	ret = append(ret, root.Val, PreorderTraverseIII(root.Left)..., PreorderTraverseIII(root.Right)...)
+
+	return ret
+}*/
 
 //---------------------------------------递归实现二叉树的中序遍历---------------------------------------
 func InorderTraverse(root *TreeNode) []int {
